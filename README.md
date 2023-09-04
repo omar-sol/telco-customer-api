@@ -1,1 +1,1 @@
-# telco-customer-churn-model
+# telco-customer-model
