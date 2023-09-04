@@ -1,0 +1,5 @@
+.*
+env/
+Telco-Customer-Churn-3.csv
+train_predictive_model.ipynb
+get_pred.py

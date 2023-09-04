@@ -1,6 +1,10 @@
+import os
 import requests
+from dotenv import load_dotenv
 
-url = "http://127.0.0.1:8000/predict"
+load_dotenv(".env")
+API_URL = os.getenv("API_URL")
+
 data = [
     {
         "gender": "Female",
@@ -24,5 +28,5 @@ data = [
         "TotalCharges": 59.7,
     },
 ]
-response = requests.post(url, json=data)
+response = requests.post(API_URL, json=data)
 print(response.json())
